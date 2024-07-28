@@ -52,7 +52,7 @@
 			</tr>
 
 			<tr>
-				<td><strong>Total</strong></td>
+				<td style="text-align: right;"><strong>Total</strong></td>
 				<td style="text-align: right;"><strong>7</strong></td>
 				<td style="text-align: right;"><strong>9</strong></td>
 				<td style="text-align: right;"><strong>3</strong></td>
@@ -91,6 +91,55 @@
 			</ol>
 		</ul>
 	</ul>
+
+<h2>FORM</h2>
+<form action="assessment.html" method="POST">
+	<section class="name">
+		<label for="Firstname">First:</label>
+		<input type="text" name="firstname">
+		<label for="Firstname">Last:</label>
+		<input type="text" name="lastname">
+	</section>
+
+	<section class="sport">
+		<span>Favorite sport:</span>
+		<br>
+		<label for="sport"></label>
+		<select name="sport" id="sport">
+			<option value="soccer">Soccer</option>
+			<option value="tennis">Tennis</option>
+			<option value="basketball">Basketball</option>
+
+		</select>
+	</section>
+
+	<section class="experience">
+		<label for="experience">I have:</label>
+		<input type="checkbox" name="experience" id="attended" value="attended">
+		<label for="attended">Attended</label>
+		<input type="checkbox" name="experience" id="played" value="played">
+		<label for="attended">Played</label>
+		<input type="checkbox" name="experience" id="coached" value="coached">
+		<label for="attended">Coached</label>
+		<input type="checkbox" name="experience" id="bet" value="bet">
+		<label for="attended">Bet on this sport</label>	
+	</section>
+
+	<section>
+		<label for="prefer">For this sport I prefer the:</label>
+		<input type="radio" name="prefer" id="amateur" value="amateur">
+		<label for="amateur">Amateur</label>
+		<input type="radio" name="prefer" id="college" value="college">
+		<label for="amateur">College</label>
+		<input type="radio" name="prefer" id="professional" value="professional">
+		<label for="amateur">Professional</label>
+	</section>
+
+	<section class="submission">
+		<input type="submit" value="Submit Query">
+	</section>
+
+</form>
 
 
 
